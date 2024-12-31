@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\OfficeSpace;
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -24,7 +25,7 @@ class City extends Model
         $this->attributes['slug'] = Str::slug($value);
     }
     
-    public function offices(): HasMany
+    public function officeSpaces(): HasMany
     {
         return $this->hasMany(OfficeSpace::class);
     }
