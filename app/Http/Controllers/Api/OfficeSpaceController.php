@@ -17,7 +17,7 @@ class OfficeSpaceController extends Controller
 
     public function show(OfficeSpace $officeSpace)
     {
-        $officeSpace->load(['city'], ['photos'], ['benefits']);
+        $officeSpace->load(['city', 'photos', 'benefits']);
         return new OfficeSpaceResource($officeSpace);
     }
 }

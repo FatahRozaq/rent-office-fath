@@ -4,6 +4,8 @@ namespace App\Http\Resources\Api;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use App\Http\Resources\Api\OfficeSpacePhotoResource;
+use App\Http\Resources\Api\OfficeSpaceBenefitResource;
 
 class OfficeSpaceResource extends JsonResource
 {
