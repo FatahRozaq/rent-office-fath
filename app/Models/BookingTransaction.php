@@ -28,7 +28,7 @@ class BookingTransaction extends Model
         return $this->belongsTo(OfficeSpace::class, 'office_space_id');
     }
 
-    public function generateUniqueTrxId()
+    public static function generateUniqueTrxId()
     {
         $prefix = 'ROF';
 

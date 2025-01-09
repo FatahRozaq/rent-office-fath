@@ -17,9 +17,9 @@ Route::middleware('api_key')->group(function () {
     Route::get('/office/{officeSpace:slug}', [OfficeSpaceController::class, 'show']);
     Route::apiResource('/offices', OfficeSpaceController::class);
 
-    // Route::post('/booking-transaction', [BookingTransactionController::class, 'store']);
+    Route::post('/booking-transaction', [BookingTransactionController::class, 'store']);
 
-    // Route::post('/check-booking', [BookingTransactionController::class, 'booking_details']);
+    Route::post('/check-booking', [BookingTransactionController::class, 'booking_details']);
 });
 
 
